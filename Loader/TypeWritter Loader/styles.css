@@ -1,0 +1,49 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader.loaded {
+    animation: slideOut 0.5s forwards;
+  }
+  
+  .loader__content {
+    text-align: center;
+  }
+  
+  .loader__text {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #ffffff;
+    animation: typewriter 0.7s steps(30) 0s forwards; 
+  }
+  
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  

@@ -1,0 +1,34 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Loader background color */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader.loaded {
+    animation: slideOut 0.5s forwards; /* Slide-out animation */
+  }
+  
+  .loader__content {
+    text-align: center;
+  }
+  
+  .loader__logo {
+    width: 100px; /* Adjust the width of your logo */
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  
